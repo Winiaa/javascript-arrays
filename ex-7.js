@@ -42,7 +42,15 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let productQuantityOfJoannet;
-let totalPurchaseOfDary;
+
+let isArray = Array.isArray(orders);
+let creditCardTypeOfBlindermann = orders[2].creditCardType = "Visa";
+let productQuantityOfJoannet = orders[3].productQuantity;
+let totalPurchaseOfDary = orders[1].productPrice * orders[1].productQuantity;
+let removeOrder = delete orders[0];
+
+console.log("Is orders an array? " + isArray);
+console.log("Credit Card Type of Toinette Blindermann: " + creditCardTypeOfBlindermann);
+console.log("Product Quantity of Anjela Joannet: " + productQuantityOfJoannet);
+console.log("Total Purchase of Celia Dary: " + totalPurchaseOfDary);
+console.log("Orders after removing the first order: ", orders);
